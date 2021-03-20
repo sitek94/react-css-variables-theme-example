@@ -1,0 +1,22 @@
+:root {
+  --white: #fff;
+  --gray-dark: #282c34;
+  --blue-light: #61dafb;
+  --blue-light-rgb: 97, 218, 251;
+  --blue: #3498db;
+  --blue-rgb: 52, 152, 219;
+}
+
+body[data-theme='light'] {
+  --primary: var(--gray-dark);
+  --secondary: var(--white);
+  --tertiary: var(--blue);
+  --tertiary-rgb: var(--blue-rgb);
+}
+
+body[data-theme='dark'] {
+  --primary: var(--white);
+  --secondary: var(--gray-dark);
+  --tertiary: var(--blue-light);
+  --tertiary-rgb: var(--blue-light-rgb);
+}
